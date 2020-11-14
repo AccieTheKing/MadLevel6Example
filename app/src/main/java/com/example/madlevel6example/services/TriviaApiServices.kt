@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface TriviaApiServices {
     @GET("/random/trivia?json")
-    fun getRandomNumberTrivia(): Trivia
+    suspend fun getRandomNumberTrivia(): Trivia
 }
